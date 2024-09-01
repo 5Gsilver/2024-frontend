@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script defer src="main.js"></script>
+</head>
+<body>
+	<style>
+		@charset 'utf-8';
+		/*reset*/
+		*{ margin:0px; padding:0px}
+		ul,ol,li{ list-style:none; }
+		a{text-decoration:none; }
+
+		a{text-decoration: none;}
+
+		#box, #box2{
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			transition: 0.5s;
+		}
+
+		#wrap{
+			width: 500px;
+			height: 500px;
+			border: 1px solid #000;
+			padding: 100px;
+			box-sizing: border-box;
+			margin: 100px auto;
+		}
+
+		#wrap article{
+			width: 100px;
+			height: 100px;
+			background-color: aqua;
+			transition: 1s;
+		}
+
+		#wrap.on article{
+			background-color: hotpink;
+		}
+	</style>
+	
+<main>
+	<div id="box"></div>
+
+	<ul>
+		<li><a href="#">item1</a></li>
+		<li><a href="#">item2</a></li>
+		<li><a href="#">item3</a></li>
+		<li><a href="#">item4</a></li>
+	</ul>
+
+	<a href="#" class="btnplus">plus</a>
+	<a href="#" class="btnminus">minus</a>
+
+	<div id="box2"></div>
+
+	<section id="wrap">
+		<article></article>
+	</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script defer src="main.js"></script>
+
+</head>
+<style>
+@charset 'utf-8';
+/*reset*/
+*{ margin:0px; padding:0px}
+ul,ol,li{ list-style:none; }	
+a{text-decoration:none; }
+
+#gallery {
+	width: 100%;
+	height: 100vh;
+	background: #000;
+}
+
+#gellery h1{
+	font: 100px/1 arial;
+	color: #fff;
+	position: absolute;
+	top: 15vh;
+	left: 5vw;
+	z-index: 1;
+}
+
+#gallery .showBox {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+#gallery .showBox img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /*이미지 넘쳐 스크롤 생김 방지*/
+}
+
+#gallery .controls {
+	width: 40%;
+	padding: 50px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	right: 0;
+	bottom: 20vh;
+}
+
+#gallery .controls ul {
+	display: flex;
+	gap: 20px;
+}
+
+#gallery .controls ul li a{
+	font-size: normal 12px/1 arial; 
+	color: #777;
+}
+
+#gallery .controls ul li:hover a{
+	color: #fff;
+}
+
+#gallery.controls ul li.on a{
+	color: #fff;
+}
+
+
+</style>
+
+<body>
+	<section id="gallery">
+		<article class="showBox">
+			<img src="img/pic1.jpg" alt="pic1">
+		</article>
+
+		<nav class="controls">
+			<ul class="btns">
+				<li class="on">
+					<a href="img/pic1.jpg">INOVATION</a>
+				</li>
+				<li>
+					<a href="img/pic2.jpg">BRAND IDENTITY</a>
+				</li>
+				<li>
+					<a href="img/pic3.jpg">INVESTMENT</a>
+				</li>
+				<li>
+					<a href="img/pic2.jpg">BRAND NEW</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script defer src="main.js"></script>
+</head>
+<body>
+	<style>
+		@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Orbitron";
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+.wrap > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.wrap #circle {
+  width: 600px;
+  height: 800px;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -400px;
+  margin-left: -300px;
+}
+.wrap #circle article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*
+.face1{
+  transform:rotateY(0deg) translateZ(-764px); 
+}
+.face2{
+  transform:rotateY(45deg) translateZ(-764px); 
+}
+.face3{
+  transform: rotateY(90deg) translateZ(-764px);
+}
+.face4{
+  transform:rotateY(135deg) translateZ(-764px); 
+}
+.face5{
+  transform:rotateY(180deg) translateZ(-764px); 
+}
+.face6{
+  transform:rotateY(225deg) translateZ(-764px); 
+}
+.face7{
+  transform:rotateY(270deg) translateZ(-764px); 
+}
+.face8{
+  transform:rotateY(315deg) translateZ(-764px); 
+}
+
+*/
+/*
+translateZ() 
+
+600px*8 = 4800px 
+-> 원둘레가 4800px 
+반지름 = 원둘레/2 /3.14 = 764
+*/
+
+/*# sourceMappingURL=style.css.map */
+
+	</style>
+<section>
+	<article>
+		<a href="#">click!!</a>
+	</article>
+</section>
+</body>
+</html>

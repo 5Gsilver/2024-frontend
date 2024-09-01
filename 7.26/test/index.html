@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<style>
+		body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.all {
+    width: 1180px;
+    text-align: center;
+}
+
+.pic-all {	
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic {
+    width: 30%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pic h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.pic p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.pic a {
+    display: inline-block;
+    margin-top: 10px;
+		margin-right: 230px;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pic:hover {
+    transform: scale(1.1);
+}
+
+.pic a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+	</style>
+<!-- 
+test.png를 와 같이 너비 1180px의 레이아웃을 만드세요 
+썸네일에 이미지를 넣고 호버효과를 추가하세요 
+
+-->
+    <div class="all">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>
+        <div class="pic-all">
+            <div class="pic">
+                <img src="img/pic1.jpg" alt="pic1">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, delectus!</p>
+                <a href="#">View More</a>
+            </div>
+            <div class="pic">
+                <img src="img/pic2.jpg" alt="pic2">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, delectus!</p>
+                <a href="#">View More</a>
+            </div>
+            <div class="pic">
+                <img src="img/pic3.jpg" alt="pic3">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, delectus!</p>
+                <a href="#">View More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

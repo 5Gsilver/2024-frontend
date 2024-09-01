@@ -1,0 +1,15 @@
+#box{
+  width: 200px; 
+  height: 200px; 
+  background: aqua;
+  border: 5px solid #000;
+  transform: rotate(0deg);
+}
+
+#box1{
+  width:200px; 
+  height:200px; 
+  background: aqua;
+  margin: 100px;
+  transition:0.5s;
+}

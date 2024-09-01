@@ -1,0 +1,74 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 전체레이아웃 */
+section {
+  width: 600px;
+  height: 340px;
+  border: 1px solid #000;
+  margin: 100px auto;
+}
+
+section ul {
+  display: flex;
+}
+
+section ul li {
+  width: 200px;
+  height: 40px;
+}
+
+section ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: bold 14px/40px arial;
+  color: #999;
+  text-align: center;
+}
+
+section ul li.on a {
+  background: #333;
+  color: #fff;
+}
+
+section article {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+section article div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 50px/1 arial;
+  color: #333;
+  transition: all 0.5s;
+}
+
+section article div.on {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=style.css.map */

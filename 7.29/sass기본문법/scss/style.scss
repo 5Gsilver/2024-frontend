@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* reset 파일 import*/
+@import "reset.scss"; 
+
+/* 변수 설정 */
+$bg : #efefef; 
+$wid : 1180px; 
+
+@mixin button($wid:200px, $ht:50px, $btnBg:#fff, $fz:12px){
+  display: block;
+  width:$wid; 
+  height:$ht; 
+  border-radius:$ht / 2; 
+  background: $btnBg;
+  font-size:$fz; 
+  line-height:$ht; 
+  text-align: center;
+}
+
+/* section */
+section{
+  width: 100%; 
+  padding: 180px 0; 
+  background:$bg; 
+
+  .inner{
+    width:$wid; 
+    margin:0 auto; 
+
+    h1{
+      font:22px/1 arial; 
+      color:#555; 
+      text-align: center;
+    }
+
+    .wrap{
+      display: flex; 
+      gap: 20px;
+      flex-wrap:wrap; 
+
+      article{
+        width:($wid / 4); 
+        height:200px; 
+        background: #555;
+        transform:translateY(100%); 
+        opacity:0; 
+        transition: 1s;
+ 
+        a{
+          @include button($wid:150px);
+        }
+
+        @for $i from 1 through 10 {
+          &:nth-of-type(#{$i}){
+            transition-delay: $i * 0.3s
+          }
+        }
+      }
+    }
+  }
+
+  //section에 호버했을때 article
+  &:hover .inner .wrap article{
+    transform: translateY(0);
+  opacity: 1;
+  }
+
+
+
+}

@@ -1,0 +1,13 @@
+@charset 'utf-8';
+/*reset*/
+*{ margin:0px; padding:0px}
+ul,ol,li{ list-style:none; }
+a{text-decoration:none; }
+
+
+p{   
+  border: 1px solid #000;
+  font-size:50px; 
+  display: inline-flex; 
+  gap:20px; 
+}
