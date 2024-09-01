@@ -1,0 +1,83 @@
+@charset 'UTF-8';
+
+/* 초기화 */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* 
+부모요소에 높이값을 지정하지 않으면
+자식요소의 높이값이 부모요소의 높이값이 된다
+*/
+
+article:nth-of-type(1){
+	width: 400px;
+	height: 300px;
+	background: pink;
+	float: left;
+	margin: 20px;
+	padding: 50px;
+}
+
+article:nth-of-type(2){
+	width: 400px;
+	height: 400px;
+	background: lightblue;
+	float: right;
+}
+
+article:nth-of-type(3){
+	width: 800px;
+	height: 200px;
+	background: lightgreen;
+	clear: both;
+}
+
+article:nth-of-type(4){
+	width: 800px;
+	height: 200px;
+	background: lightgreen;
+	clear: both;
+}
+
+section::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+section > * {
+	text-align: center;
+}
+
+h2{
+	padding-bottom: 50px;
+}
+
+p{
+	padding-bottom: 40px;
+}
+
+
+
+
+
+
+/* 
+block 요소를 나란히 배치하는 방법
+나란히 ㄹ배치하고자 하는 아이템에
+float 속성을 적용
+float:left/right
+
+float을 해제하는 방법
+float을 해제해야 하는 요소에 
+clear:both를 적용
+1.float이 끝나는 다음 오는 요소에 적용
+2.가상 요소  ::after를 만들어 float해제
+wrapper::after{
+content:'';
+display:block;
+clear::both;
+}
+*/

@@ -1,0 +1,70 @@
+@charset 'UTF-8';
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+section{
+	width: 800px;
+	margin: 50px auto;
+	border: 10px solid #000;
+}
+section::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+section article{
+	width: 400px;
+	height: 400px;
+	float: left;
+}
+
+section article:nth-of-type(1){
+	background: pink;
+}
+
+section article:nth-of-type(2){
+	background: lightblue;
+	position: relative;
+}
+
+section article:nth-of-type(3){
+	width: 800px;
+	height: 200px;
+	background: lightgreen;
+	position: relative;
+}
+
+p{
+	width: 50px;
+	height: 50px;
+	background: red;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+div{
+	width: 50px;
+	height: 50px;
+	background: #000;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}
+
+/* avsolute요소는 부모요소중에 relative속성을 가진
+요소를 기준으로 위치를 잡는다
+
+absulute로 위치를 잡을 때에는
+position속성과 함께 위치값
+top또는 bottom값 & left또는 right값을 꼭 가져야 한다.
+
+fixed속성의 요소도 position과 함께 위치값 필수 지정 필요
+*/

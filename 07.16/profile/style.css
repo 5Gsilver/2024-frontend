@@ -1,0 +1,140 @@
+@charset 'utf-8';
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(pic2.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+ul,ol,li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: #ebfaff;
+}
+
+section{
+	width: 340px;
+	background-color: #fff;
+	padding: 30px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px rgb(0,0, 0, 0.1);
+	margin: 50px auto;
+}
+section menu::after{
+	content: '';
+	display: block;
+	clear:both;
+}
+section menu a{
+	font-size: 15px;
+	color: #333;
+}
+ㄴ
+section menu a:nth-of-type(1){
+	float: left;
+}
+
+section article{
+	width: 100%;
+	text-align: center;
+}
+section article img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 20px 20px 10px rgba(235, 250, 255,0.7);
+}
+
+section article h1{
+	font: 20px/1 arial;
+	color: #333;
+	margin-bottom: 20px;
+	margin-top: 20px;	
+}
+
+section h2{
+	font:14px/1 arial;
+	color: #aaa;
+	margin-bottom: 20px;
+}
+
+section article a{
+	display:block;
+	width: 180px;
+	height: 32px;
+	font-size: 16px;
+	color: #fff;
+	background: #5fbcdb;
+	margin: 0 auto;
+	border-radius: 16px;
+}
+
+section ul li {
+	padding: 10px 0;
+}
+
+section ul li i {
+	font-size: 14px;
+	color: #555;
+}
+
+section ul li span {
+	font-family: 'orbitron';
+	font-size: 16px;
+	color: #777;
+	letter-spacing: 1px;
+}
+
+
+
+section ul li:nth-of-type(1){
+	border-bottom: 1px solid #ddd;
+}
+
+.others {
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+	margin: 30px auto;
+}
+
+
+.others a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: gray;
+	margin: 0 15px;
+	border-radius: 20px;
+	opacity: 0.6;
+}	
+
+.others a:nth-of-type(1){
+	background: lightblue;
+	opacity: 1;   /*현재 페이지에 해당하는 버튼 진하게 처리*/
+}
+
+.others a:nth-of-type(2){
+	background: lightgreen;
+}
+
+.others a:nth-of-type(3){
+	background: pink;
+}
+
+.others a:nth-of-type(4){
+	background: purple;
+}

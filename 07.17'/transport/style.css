@@ -1,0 +1,91 @@
+@charset 'udt-8';
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+article{
+	width: 200px;
+	height: 200px;
+	border: 5px solid #000;
+	margin: 100px;
+	position: relative;
+}
+
+article div{
+	width: 100px;
+	height: 200px;
+	background: blue;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.box1 div{
+	transform: scale(1.2);
+}
+
+.box2 div{
+	transform: skew(45deg, 20deg);
+}
+
+.box3 div{
+	transform: skweX(-45deg);
+}
+
+.box4 div{
+	transform: skewY(45deg);
+}
+
+.box5 div{
+	transform: translate(50px, 50px);
+}
+
+.box6 div{
+	transform: translatex(50px);
+}
+
+.box7 div{
+	transform: translatey(50px);
+}
+
+.box8 div{
+	transform: rotate(50px);
+}
+
+.box9 div{
+	transform: translatex(50px) rotate(30deg);
+}
+
+article{
+	perspective: 50px;
+}
+
+.box10 div{
+	transform: rotate(30deg) translatex(100px);
+}
+
+.box11:hover div{
+	transform: rotate(45deg);
+	transition: 1s;
+	transform-origin: top left;
+}
+
+.box12 div{
+	transition: all 0.5s;
+	transform-origin: right center;
+}
+
+.box12:hover div{
+	transform: rotateY(130deg);
+}
+
+.box13 div{
+	transition: all 0.5s;
+}
+
+.box13 :hover div{
+	transform: translateZ(100px);
+}

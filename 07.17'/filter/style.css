@@ -1,0 +1,70 @@
+@charset 'utf-8';
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+section{
+	width: 660px;
+}
+
+section::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+article{
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+}
+
+article img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* blur 값이 커질수록 효과 커짐 */
+article:nth-of-type(2) img{
+	filter: blur(2px);
+}
+
+/* brightness 1보다 작아지면 어두어짐 */
+article:nth-of-type(3) img{
+	filter: brightness(2);
+}
+
+/* contrast 100%봅다 작아지면 명암대비 효과 감소 */
+article:nth-of-type(4) img{
+	filter: contrast(50%);
+}
+
+/* grayscale 100%에 가까울수록 흑백으로 전환 */
+article:nth-of-type(5) img{
+	filter: grayscale(90%);
+}
+
+/* hue-rotate 0도에서 360도 사이 */
+article:nth-of-type(6) img{
+	filter: hue-rotate(0deg);
+}
+
+/*invert 100%에 가까울수록 색이 반대로 변환 */
+article:nth-of-type(7) img{
+	filter: invert(100%);
+}
+
+/* saturate 0에 가까울수록 채도 낮아짐*/
+article:nth-of-type(8) img{
+	filter: saturate(1);
+}
+
+/* sepia 100%에 가까울수록 갈색톤으로 변환	*/
+article:nth-of-type(6) img{
+	filter: sepia(0deg);
+}
+

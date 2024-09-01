@@ -1,0 +1,202 @@
+@charset 'UTF-8';
+
+*{
+	border: 1px
+	solid lightblue;
+}
+
+ h1,h2,h3{
+	color: red;
+	border: 1px
+	solid red;
+}
+
+p strong {
+	border: 1px solid
+	blue;
+}
+
+ul > li {
+	border: 1px solid
+	orange;
+}
+/* 
+ul	li:nth-of-type(even) {
+	border: 1px solid red;
+}
+
+ul	li:nth-of-type(odd) {
+	border: 1px solid green;
+}
+
+ul	li:nth-of-type(even) {
+	border: 1px solid orange;
+}
+
+ul	li:nth-of-type(odd) {
+	border: 1px solid pink;
+} */
+ul>li:nth-child(1){
+	border: 10px solid red;
+}
+
+ul>li:nth-child(2){
+	border: 10px solid blue;
+}
+
+ul>li:nth-child(3){
+	border: 10px solid green;
+}
+
+ul>li:nth-child(4){
+	border: 10px solid orange;
+}
+
+a[herf="https//:www.naer.com"]
+{
+	border: 30px solid black;
+}
+
+a[herf="https//:www.naer.com"]
+{
+	color: orange;
+}
+
+h1:hover{
+	border: 10px solid
+	lightgreen;
+}
+
+/* h1::before{
+	content: '';
+	color: blue;
+}
+
+h1::after{
+	content: '';
+	color: green;
+} */
+
+h1::before{
+	content: '';
+	display: block;
+	width: 400px;
+	height: 0px;
+	background: pink;
+}
+
+h1:hover::before{
+	background: lightgreen;
+}
+
+p.text1{
+	border: 1px solid
+	blue;
+}
+
+p.text2{
+	border: 1px solid
+	red;
+}
+
+#text strong{
+	border: 10px solid
+	pink;
+}
+
+p.text1 strong{
+	border: 5px solid
+	red;
+}
+
+.text1 strong{
+	border: 10px solid
+	green;
+}
+
+p{
+	font-weight: bold;
+	font-size: 24px;
+	font-family: arial;
+	line-height: 1.3;
+	text-align: center;
+	letter-spacing: -1px;
+	/* font:bold 24px/1.3 arial; */
+}
+
+.colors li:nth-last-of-type(1){
+	background: #000;
+}
+
+.colors li:nth-last-of-type(2){
+	background: #111;
+}
+
+.colors li:nth-last-of-type(3){
+	background: #222;
+}
+
+.colors li:nth-last-of-type(4){
+	background: #333;
+}
+
+.colors li:nth-last-of-type(5){
+	background: #444;
+}
+
+.colors li:nth-last-of-type(6){
+	background: #555;
+}
+
+.colors li:nth-last-of-type(7){
+	background: #666;
+}
+
+.colors li:nth-last-of-type(8){
+	background: #777;
+}
+
+.colors li:nth-last-of-type(9){
+	background: #888;
+}
+
+.colors li:nth-last-of-type(10){
+	background: #999;
+}
+
+.colors li:nth-last-of-type(11){
+	background: #aaa;
+}
+
+.colors li:nth-last-of-type(12){
+	background: #bbb;
+}
+
+.colors li:nth-last-of-type(13){
+	background: #ccc;
+}
+
+.colors li:nth-last-of-type(14){
+	background: #ddd;
+}
+
+.colors li:nth-last-of-type(15){
+	background: #eee;
+}
+
+.colors li:nth-last-of-type(16){
+	background: #fff;
+}
+
+.box{
+	width: 500px;
+	height: 300px;
+	font-weight: bold;
+	font-size: 100px;
+	color: #333;
+	text-align: center;
+	/* 텍스트는  인라인요소이므로 margin을
+	적용할수 없음 */
+	margin: 0 auto;
+	box-sizing: border-box;
+}

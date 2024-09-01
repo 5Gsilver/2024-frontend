@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url();
+
+/* reset 초기화 */
+* { margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,ol,li {
+	list-style: none;
+}
+body {
+	background-image: url(img/pattern.png);
+}
+
+
+section{
+	/* 흰색 상자 */
+	width: 400px;
+	height: 500px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px 0;
+	margin: 40px auto;
+	padding-top: 15px;
+
+	/* 장미 */
+	background-image: url(img/flower.png);
+	background-repeat: no-repeat;
+	background-position: bottom 0 right 0;
+	background-size: 50%;
+}
+
+section > * {
+	margin: 15px;
+}
+
+h1{
+	text-align: center;
+}
+img {
+	width: 250px;
+	display: block;
+	margin: auto;
+}
+
+h4 {
+	margin-bottom: 0!important;
+}
+
+p{
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+	text-align: right;
+	color: blue;
+}
+
+
+
