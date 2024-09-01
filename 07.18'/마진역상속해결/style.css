@@ -1,0 +1,55 @@
+@charset 'utf-8';
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+ul,ol,li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* 
+vw : viewport width 브라우저를 100등분한 단위 
+vh: viewport height 브라우저 높이를 100등분한 단위
+스크롤이 생길수 있으므로 가로전체를 사용할 때에는 100%를 사용
+*/
+
+section{
+	width: 100%;
+	height: 100vh;
+	background: lightblue;
+	padding-top: 200px;
+	box-sizing: border-box 	;
+}
+
+.box1{
+	width: 200px;
+	height: 200px;
+	background: #000;
+	margin: 0 auto;
+}
+
+.box2{
+	width: 200px;
+	height: 200px;
+	background: red;
+	margin: 50px auto;
+}
+
+/* 
+부모 블록요소에서 첫번째 자식
+(블록요소)에 margin-top이
+설정되면 해당 마진값이 부모요소에
+역상속됨
+
+해결 방법 -첫번째 자식인
+블록요소 margion-top을 주는 것이 아닌 부모요소에 padding-top
+을 설정해 위아래 여백을 띄어줌(추천)
+
+두번째 자식요소는 영향 없음
+*/

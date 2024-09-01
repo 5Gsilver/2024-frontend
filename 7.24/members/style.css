@@ -1,0 +1,73 @@
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+section{
+    width: 70vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+section h1{
+    width: 25%;
+    font-size: 3.2rem;
+    font-weight: normal;
+    font-family: 'Nanum Myeongjo';
+    color: #111;
+    border-right: 1px solid #bbb;
+    padding-right: 50px;
+}
+
+section .members{
+    display: flex;
+    /* 가로 정렬 */
+    flex-flow: row wrap;
+    /*축약형 */
+    justify-content: space-between;
+    /* 비율 맞추기 */
+    width: 75%;
+    padding-left: 50px;
+}
+section .members article{
+    width: 30%;
+    margin-bottom: 80px;
+}
+section .members article .pic{
+    width: 100%; height: 300px;
+}
+section .members article .pic img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1024px){	
+	section{
+		width: 80vw;
+		flex-wrap: wrap;
+		/* justify-content: space-between; */
+	}
+	section h1{
+		width: 25%;
+		font-size: 3.2rem;
+		border-right: none;
+		padding-right: 0px;
+	}
+
+	section .members{
+		/* 비율 맞추기 */
+		width: 100%;
+		padding-left: 0px;
+	}
+}
+
+@media screen and (max-width: 763px){		
+	section .members article {
+			width: 45%;
+	}
+}
+
+@media screen and (max-width: 538px){
+	section .members article {
+		width: 100%;
+}
+}
+

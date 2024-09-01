@@ -1,0 +1,125 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol,li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*  font-family: "Architects Daughter" */
+
+header{
+	width: 100%;
+	height: 10vh;
+	border-bottom: 1px solid #888;
+	z-index: 1;
+	position: absolute;
+}
+
+header h1{
+	font:bold 24px/1 "Architects Daughter";
+	color: #fff;
+	position: absolute;
+	left: 6vw;
+	top: 50%;
+	margin-top: -12px;
+}
+
+header #gnb{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+header #gnb li{
+	float: left;
+	margin-right: 20PX;
+}
+
+header #gnb li a{
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+header .sns li{
+	position: absolute;
+	margin-left: 20px;
+	right: 6vw;
+	top: 40%;
+}
+
+header .sns li a{
+	font-size: 16px;
+	color: #fff;
+}
+
+figure{
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+figure video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+}
+
+figure.txt{
+	position: absolute;
+	top: 50%;
+	left: 6vw;
+	transform: translateY(-50%);
+}
+
+article.txt{
+	top: 50%;
+	left: 6vw;
+	position: absolute;
+	color: white;
+}
+
+figure .txt p{
+	font:bold 8vw/1 "Fredericka the great";
+	color:  #fff;
+}
+
+figure .txt ul{
+	margin-top: 30px;
+}
+
+figure .txt ul li{
+	float: left;
+	margin-right: 30px;
+}
+
+figure .txt ul li strong{
+	font: 14px/1 arial;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+footer{
+	position: absolute;
+	bottom: 5vh;
+	left: 50%;
+	transform: translateX(-50%);
+	font: 12px/1 arial;
+	color: #ddd;
+	letter-spacing: 2px;
+}
+
+

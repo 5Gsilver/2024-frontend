@@ -1,0 +1,27 @@
+@charset 'utf-8';
+/*reset*/
+*{ margin:0px; padding:0px}
+ul,ol,li{ list-style:none; }
+a{text-decoration:none; }
+
+article{
+	width: 500px;
+	height: 500px;
+	margin: 50px auto;
+}
+
+article path{
+	fill: transparent;
+	stroke: #000;
+	stroke-width: 1;
+}	
+
+img{
+	width: 200px;
+	height: 200px;
+}
+
+/*
+stroke-dasharry 선의 간격을 띄는 속성 
+stroke-dashoffsey 가시영역에 보이는 선의 시작위치를 지정
+*/

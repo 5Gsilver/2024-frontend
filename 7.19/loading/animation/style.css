@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul,ol,li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+#box{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: pink;
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation-name: move;
+	animation-duration:5s ;
+	animation-timing-function:linear;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+}
+
+#box h1{
+	font:20px/200px arial;
+	text-align: center;
+}
+
+@keyframes move{
+	from{
+		left: 0;
+		transform: rotate(0);
+	}
+	to{
+		left: 200px;
+		transform: rotate(360deg);
+	}
+}	

@@ -1,0 +1,45 @@
+@charset 'utf-8';
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+.others{
+	width: 400px;
+	border: 1px solid	#000;
+	margin: 50px auto;
+	text-align: center;
+	font-size: 0;
+}
+
+.others a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background: pink;
+	margin: 0 10px;
+}
+
+.others a:nth-of-type(2){
+	background: lightblue;
+}
+
+.others a:nth-of-type(3){
+	background: lightgreen;
+}
+
+.others a:nth-of-type(4){
+	background: red;
+}
+
+/* 인라인요소는 나란히 배치했을 때 사이가 벌어지는 버그가 발생
+해별방법으로 태그를 나란히 쓰는 방법이 있지만 추천하지 않음
+font-size:0을 부모요소에 적용하여 사이간격을 없애고 원하는 간격을 
+인라인 요소에 적용
+*/
+

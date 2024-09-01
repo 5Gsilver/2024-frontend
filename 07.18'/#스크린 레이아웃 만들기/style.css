@@ -1,0 +1,53 @@
+@charset 'utf-8';
+
+*{margin: 0;
+padding: 0;
+}
+
+/* 
+vw : viewport width
+vh : viewport height
+
+풀스크린 만드는 공식
+width : 100%
+height : 100vh
+
+width값을 100vw로 설정하면 세로 스크롤이 생겼을때 가로 스크롤이
+생성됨 (100vw는 스크롤바너비를 제외한 경우로 계산함)
+*/
+
+section{
+	width: 100%;
+	height: 100vh;
+}
+
+.box1{
+	background: lightblue;
+}
+
+.box1 span{
+	color: #fff;
+	font-size: 200px;
+}
+
+.box2{
+	background: lightgreen;
+}
+
+.box2 span{
+	color: #fff;
+	font-size: 20vw;
+}
+
+.box3{
+	background: orange;
+}
+
+.box3 span{
+	color: #fff;
+	font-size: 20vh;
+}
+
+.box4{
+	background: purple;
+}

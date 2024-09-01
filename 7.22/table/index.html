@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>table 태그</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 
+  table은 열row과 행column으로 구성되어있음 
+  tr은 테이블의 줄 
+  제목칸은 th 
+  본문칸은 td 
+
+  셀병합 
+  1.가로칸을 합칠때에는 합쳐지는 칸은 삭제 후 시작칸에 colspan="합쳐지는 칸수" 
+  2.세로칸은 합칠때에는 합쳐지는 칸은 삭제후 
+  시작칸에 rowspan="합쳐지는 칸수"
+
+  15,20,25 합치기 
+  7,8,12,13 합치기 
+  -->
+<table border="1" class="table1">
+  <tr>
+    <th>제목1</th>
+    <th>제목2</th>
+    <th>제목3</th>
+    <th>제목4</th>
+    <th>제목5</th>
+  </tr>
+  <tr>
+    <td colspan="2">1, 2</td>    
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td rowspan="2">6, 11</td>
+    <td colspan="2" rowspan="2">7,8,12,13</td>
+   
+    <td>9</td>
+    <td>10</td>
+  </tr>
+  <tr>    
+     
+    <td>14</td>
+    <td rowspan="3">15,20,25</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+     
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    
+  </tr>
+</table>
+
+<table class="table2" border="1">
+  <caption class="h">A반의 시험성적</caption>
+  <!-- <colgroup>
+  <col width="20%">
+  <col>
+  <col width="15%">
+  <col width="15%">
+  </colgroup> -->
+  <thead>
+    <tr>
+      <th>국어</th>
+      <th>수학</th>
+      <th>과학</th>
+      <th>영어</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>70</td>
+      <td>80</td>
+      <td>90</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>85</td>
+      <td>95</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1">
+  <caption class="h">회원정보</caption>
+  <tr>
+    <th scope="row">이름</th>
+    <td>홍길동</td>
+  </tr>
+  <tr>
+    <th scope="row">성별</th>
+    <td>남</td>
+  </tr>
+  <tr>
+    <th scope="row">나이</th>
+    <td>20</td>
+  </tr>
+  <tr>
+    <th scope="row">거주지</th>
+    <td>서울</td>
+  </tr>
+</table>
+
+<table class="table4" border="1">
+  <caption>당월결제금액</caption>
+  <thead>
+    <tr>
+      <th colspan="5" id="a1">당월결제금액</th>
+    </tr>
+    <tr>
+      <th id="b1">회차</th>
+      <th id="b2">원금</th>
+      <th id="b3">혜택금액</th>
+      <th id="b4">환율</th>
+      <th id="b5">수수료</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td headers="a1 b1">1</td>
+      <td headers="a1 b2">500,000</td>
+      <td headers="a1 b3">5,000</td>
+      <td headers="a1 b4">1,324</td>
+      <td headers="a1 b5">3.3</td>
+    </tr>
+    <tr>
+      <td headers="a1 b1">2</td>
+      <td headers="a1 b2">300,000</td>
+      <td headers="a1 b3">3,000</td>
+      <td headers="a1 b4">1,324</td>
+      <td headers="a1 b5">3.2</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

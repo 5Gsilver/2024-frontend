@@ -1,0 +1,14 @@
+@charset 'utf-8';
+/*reset*/
+*{ margin:0px; padding:0px}
+ul,ol,li{ list-style:none; }
+a{text-decoration:none; }
+
+
+/* 
+rem :root element 루트요소인 html요소의 font-size를 1rem으로 
+기준하는 상대적인 길이 단위
+
+em : element 이 단위는 상속된 부모요소의 font-size를 1em의 기준하는 
+길이 단위
+*/

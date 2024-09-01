@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	width: 200px;
+	height: 200px;
+	margin: 100px;
+}
+
+.box1{
+	background: linear-gradient(to bottom, blue ,red);
+}
+
+.box2{
+	background: linear-gradient(to top, blue ,red);
+}
+
+.box3{
+	background: linear-gradient(to left, blue ,red);
+}
+
+.box4{
+	background: linear-gradient(to right, blue ,red);
+}
+
+.box5{
+	background: linear-gradient(45deg, blue ,red);
+}
